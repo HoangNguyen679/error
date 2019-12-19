@@ -1,0 +1,29 @@
+❯ docker-compose up
+blog_db_1 is up-to-date
+Starting blog_blog_1 ... done
+Attaching to blog_db_1, blog_blog_1
+db_1    | 
+db_1    | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db_1    | 
+db_1    | 2019-12-19 02:51:20.105 UTC [1] LOG:  starting PostgreSQL 12.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 8.3.0) 8.3.0, 64-bit
+db_1    | 2019-12-19 02:51:20.105 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1    | 2019-12-19 02:51:20.105 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db_1    | 2019-12-19 02:51:20.108 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db_1    | 2019-12-19 02:51:20.125 UTC [21] LOG:  database system was shut down at 2019-12-17 08:14:58 UTC
+db_1    | 2019-12-19 02:51:20.132 UTC [1] LOG:  database system is ready to accept connections
+db_1    | 2019-12-19 02:53:12.058 UTC [1] LOG:  received smart shutdown request
+db_1    | 2019-12-19 02:53:12.060 UTC [1] LOG:  background worker "logical replication launcher" (PID 27) exited with exit code 1
+db_1    | 2019-12-19 02:53:12.060 UTC [22] LOG:  shutting down
+db_1    | 2019-12-19 02:53:12.071 UTC [1] LOG:  database system is shut down
+db_1    | 
+db_1    | PostgreSQL Database directory appears to contain a database; Skipping initialization
+db_1    | 
+db_1    | 2019-12-19 02:53:19.460 UTC [1] LOG:  starting PostgreSQL 12.1 on x86_64-pc-linux-musl, compiled by gcc (Alpine 8.3.0) 8.3.0, 64-bit
+db_1    | 2019-12-19 02:53:19.460 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+db_1    | 2019-12-19 02:53:19.460 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+db_1    | 2019-12-19 02:53:19.463 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+db_1    | 2019-12-19 02:53:19.480 UTC [20] LOG:  database system was shut down at 2019-12-19 02:53:12 UTC
+db_1    | 2019-12-19 02:53:19.483 UTC [1] LOG:  database system is ready to accept connections
+blog_1  | warning: the VM is running with native name encoding of latin1 which may cause Elixir to malfunction as it expects utf8. Please ensure your locale is set to UTF-8 (which can be verified by running "locale" in your shell)
+blog_1  | Interactive Elixir (1.9.4) - press Ctrl+C to exit (type h() ENTER for help)
+blog_1  | iex(1)> blog_blog_1 exited with code 0
