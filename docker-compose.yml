@@ -1,0 +1,21 @@
+version: '3.2'
+services:
+  blog:
+    build: .
+    ports:
+      - '4000:4000'
+    volumes:
+      - .:/app
+    env_file:
+      - config/docker.env
+    depends_on:
+      - db
+    network_mode: "host"
+  db:
+    image: postgres:12-alpine
+    volumes:
+      - "./volumes/postgres:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
+    env_file:
+      - config/docker.env
